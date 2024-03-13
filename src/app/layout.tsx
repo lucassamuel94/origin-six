@@ -1,16 +1,15 @@
-import type { Metadata } from 'next'
-import '@/styles/globals.css'
-import { fontHeading, fontSans } from '@/styles/fonts'
 import { cn } from '@/lib/utils'
+import { fontHeading, fontSans } from '@/styles/fonts'
+import '@/styles/globals.css'
+import type { Metadata } from 'next'
 
 type RootLayoutProps = {
   children: React.ReactNode
 }
 
 export const metadata: Metadata = {
-  title: 'Next 14 BFB',
-  description:
-    'Boilerplate default de projetos em Next14 desenvolvido por Lucas Samuel'
+  title: 'Origin Six',
+  description: 'Projeto disponibilizado pela rocketseat na nlw#6 trilha web'
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
@@ -20,7 +19,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         className={cn(
           fontSans.variable,
           fontHeading.variable,
-          'min-h-screen bg-white font-sans text-neutral-700 antialiased'
+          'min-h-screen bg-white font-sans text-gray antialiased'
         )}>
         {children}
       </body>
