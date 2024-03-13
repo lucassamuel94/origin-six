@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import colors from 'tailwindcss/colors'
 
 const config = {
   darkMode: ['class'],
@@ -23,6 +24,17 @@ const config = {
     fontFamily: {
       sans: ['var(--font-sans)', 'sans-serif'],
       heading: ['var(--font-heading)', 'serif']
+    },
+    colors: {
+      white: colors.white,
+      black: colors.black,
+      primary: '#69B99D',
+      secondary: '#CCF4E6',
+      dark: '#0F241D',
+      gray: '#767676',
+      'light-gray': '#E4E4E4',
+      background: '#F9F9F9',
+      neutral: colors.neutral
     },
     extend: {
       spacing: {
