@@ -1,6 +1,4 @@
-import Link from 'next/link'
-
-import { Icons } from '@/components/ui/icons'
+import { Logo } from './components/logo'
 import { NavigationDesktop } from './components/navigation-desktop'
 import { NavigationMobile } from './components/navigation-mobile'
 import { NavigationLinkType } from './types'
@@ -36,9 +34,7 @@ export function Header() {
   return (
     <header className='border-b border-light-gray bg-background'>
       <div className='container flex h-18 w-full shrink-0 items-center justify-between px-4 md:px-6'>
-        <Link href='/'>
-          <Icons.logo className='h-6 w-auto' />
-        </Link>
+        <Logo />
 
         <>
           <NavigationDesktop links={links} />
