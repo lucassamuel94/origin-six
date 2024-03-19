@@ -6,6 +6,6 @@ export const fadeUpAnimation = {
 
 export const fadeDownAnimation = {
   initial: { opacity: 0, y: -20 },
-  animate: { opacity: 1, y: 0 },
+  whileInView: { opacity: 1, y: 0 },
   exit: { opacity: 0, y: -20 }
 }
