@@ -3,6 +3,7 @@ import { Divider } from '@/components/ui/divider'
 import { About } from './components/about'
 import { Hero } from './components/hero'
 import { Services } from './components/services'
+import { Testimonials } from './components/testimonials'
 
 export default function HomeApp() {
   return (
@@ -14,6 +15,8 @@ export default function HomeApp() {
       <Divider direction='left' />
       <Services />
       <Divider direction='right' />
+      <Testimonials />
+      <Divider direction='left' />
     </main>
   )
 }
