@@ -1,8 +1,9 @@
 'use client'
 import { Icons } from '@/components/ui/icons'
+import { ElementType } from 'react'
+
 import { fadeDownAnimation } from '@/lib/animations'
 import { motion } from 'framer-motion'
-import { ElementType } from 'react'
 
 type ServiceType = {
   id: string,
@@ -38,7 +39,10 @@ export function Services() {
   return (
     <section id='servicos' className='bg-background'>
       <div className='container py-20 lg:py-40'>
-        <header className='max-w-lg space-y-3 text-left lg:mx-auto lg:text-center'>
+        <motion.header
+          {...fadeDownAnimation}
+          transition={{ duration: 1 }}
+          className='max-w-lg space-y-3 text-left lg:mx-auto lg:text-center'>
           <h2 className='text-3xl lg:text-4xl'>Serviços</h2>
           <p className='lg:text-lg'>
             Com mais de 10 anos no mercado, o{' '}
@@ -46,21 +50,22 @@ export function Services() {
             clientes de inúmeros países com seus tratamentos exclusivos e
             totalmente naturais
           </p>
-        </header>
+        </motion.header>
 
-        <ul className='mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3'>
+        <motion.ul
+          {...fadeDownAnimation}
+          transition={{ duration: 1 }}
+          className='mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3'>
           {services.map(({ id, name, description, icon: Icon }, i) => (
-            <motion.li
+            <li
               key={id}
-              className='flex flex-col items-center rounded-sm border-b-4 border-primary px-8 py-14 text-center shadow-lg shadow-black/5 transition-all duration-300 hover:scale-105 hover:bg-white/50 hover:shadow-2xl lg:px-12'
-              {...fadeDownAnimation}
-              transition={{ duration: 0.5, delay: 0.5 * i }}>
+              className='flex flex-col items-center rounded-sm border-b-4 border-primary px-8 py-14 text-center shadow-lg shadow-black/5 transition-all duration-300 hover:scale-105 hover:bg-white/50 hover:shadow-2xl lg:px-12'>
               <Icon className='size-20 text-primary' />
               <h4 className='mt-6 text-2xl'>{name}</h4>
               <p className='mt-3'>{description}</p>
-            </motion.li>
+            </li>
           ))}
-        </ul>
+        </motion.ul>
       </div>
     </section>
   )
