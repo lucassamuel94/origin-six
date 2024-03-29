@@ -35,7 +35,7 @@ export function Testimonials() {
   ]
 
   return (
-    <section className='overflow-hidden'>
+    <section id='depoimentos' className='overflow-hidden'>
       <div className='container space-y-16 py-40 '>
         <motion.h3
           {...fadeDownAnimation}
