@@ -1,6 +1,7 @@
 import { Header } from '@/components/header'
 import { Divider } from '@/components/ui/divider'
 import { About } from './components/about'
+import { Contact } from './components/contact'
 import { Hero } from './components/hero'
 import { Services } from './components/services'
 import { Testimonials } from './components/testimonials'
@@ -17,6 +18,8 @@ export default function HomeApp() {
       <Divider direction='right' />
       <Testimonials />
       <Divider direction='left' />
+      <Contact />
+      <Divider direction='right' />
     </main>
   )
 }
