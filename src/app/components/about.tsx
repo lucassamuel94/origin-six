@@ -18,7 +18,7 @@ export function About() {
   return (
     <section id='sobre'>
       <motion.div
-        className='container flex flex-col lg:flex-row lg:gap-16 lg:py-40'
+        className='container flex flex-col gap-16 py-20 lg:flex-row lg:py-40'
         initial={{ x: -200, scale: 0.8 }}
         whileInView={{ x: 0, scale: 1 }}
         exit={{ x: -200, scale: 1.02 }}
@@ -41,7 +41,7 @@ export function About() {
         <motion.div
           {...fadeUpAnimation}
           transition={{ duration: 1, delay: 1.03 }}
-          className='flex flex-col items-center justify-center lg:flex-1 lg:items-start'>
+          className='flex flex-col lg:flex-1 lg:items-start'>
           <h3 className='lg"text-4xl text-3xl'>Sobre nós</h3>
           <p className='mt-4 text-sm lg:text-base'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
