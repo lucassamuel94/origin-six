@@ -56,7 +56,7 @@ export function Services() {
           {...fadeDownAnimation}
           transition={{ duration: 1 }}
           className='mt-16 grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3'>
-          {services.map(({ id, name, description, icon: Icon }, i) => (
+          {services.map(({ id, name, description, icon: Icon }) => (
             <li
               key={id}
               className='flex flex-col items-center rounded-sm border-b-4 border-primary px-8 py-14 text-center shadow-lg shadow-black/5 transition-all duration-300 hover:scale-105 hover:bg-white/50 hover:shadow-2xl lg:px-12'>
