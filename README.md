@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Origin Six
 
-First, run the development server:
+Projeto da trilha WEB do evento NLW#6 Mission Origin, com o objetivo de desenvolver site onepage com base no design disponibilizado.
+
+![Capa](https://github.com/lucassamuel94/origin-six/blob/main/.github/capa.jpg)
+
+
+## Referência
+
+ - [Layout em FIGMA](https://www.figma.com/file/Hbc32Njsmwf5mCxvFYE1GD/Rocketseat---Origin-Six-(Community)?type=design&node-id=120%3A21&mode=design&t=SgY2b9nehnyhKyEi-1)
+ - [Framework NextJS](https://nextjs.org/docs)
+ - [Framer Motion](https://www.framer.com/motion/)
+ - [Shadcn-ui](https://ui.shadcn.com/docs)
+
+
+## Funcionalidades
+
+- Temas light
+- Animação 
+- Direcionamento de links
+- Responsivo
+
+
+## Demonstração
+
+[Clique aqui e veja o preview do site](https://origin-six-tau.vercel.app/)
+
+
+## Instalação
+
+Clone o projeto
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+  git clone https://github.com/lucassamuel94/origin-six.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Entre no diretório do projeto
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+  cd origin-six
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+Instale as dependências
 
-## Learn More
+```bash
+  npm install or pnpm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+Inicie o servidor
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+  npm run start or pnpm start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
+## Licença
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Esse projeto está sob a licença [MIT](https://github.com/lucassamuel94/origin-six/blob/main/LICENSE)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
