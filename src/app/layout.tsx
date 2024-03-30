@@ -1,3 +1,4 @@
+import { Footer } from '@/components/footer'
 import { cn } from '@/lib/utils'
 import { fontHeading, fontSans } from '@/styles/fonts'
 import '@/styles/globals.css'
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           'min-h-screen bg-white font-sans text-gray antialiased'
         )}>
         {children}
+        <Footer />
       </body>
     </html>
   )
